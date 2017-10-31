@@ -1,4 +1,7 @@
 const io = require('socket.io')();
+io.configure('production', ()=>{
+  io.set('origins', "192.168.1.23:*")
+});
 
 function getApiAndEmit () {
     return true
