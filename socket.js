@@ -2,7 +2,7 @@ const io = require('socket.io')();
 
 function getApiAndEmit () {
     return true
-  }
+}
 
 io.on('connection', (client)=>{
     console.log("Client connected");
